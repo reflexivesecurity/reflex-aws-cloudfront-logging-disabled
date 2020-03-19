@@ -25,7 +25,7 @@ module "reflex_aws_cloudfront_logging_disabled" {
               "enabled": [
                 false
               ]
-          },
+          }
         }
       }
     }

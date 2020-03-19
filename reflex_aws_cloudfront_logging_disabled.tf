@@ -16,19 +16,9 @@ module "reflex_aws_cloudfront_logging_disabled" {
       "cloudfront.amazonaws.com"
     ],
     "eventName": [
-      "UpdateDistribution"
-    ],
-    "responseElements": {
-      "distribution":{
-        "distributionConfig": {
-          "logging": {
-              "enabled": [
-                false
-              ]
-          }
-        }
-      }
-    }
+      "UpdateDistribution",
+      "CreateDistribution"
+    ]
   }
 }
 PATTERN

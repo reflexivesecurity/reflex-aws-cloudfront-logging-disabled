@@ -1,10 +1,36 @@
 module "reflex_aws_cloudfront_logging_disabled" {
   source           = "git::https://github.com/cloudmitigator/reflex-engine.git//modules/cwe_lambda?ref=v0.5.4"
   rule_name        = "CloudfrontLoggingDisabled"
-  rule_description = "TODO: Provide rule description"
+  rule_description = "A reflex rule to detect when CloudFront logging is disabled."
 
   event_pattern = <<PATTERN
-# TODO: Provide event pattern
+{
+  "source": [
+    "aws.cloudfront"
+  ],
+  "detail-type": [
+    "AWS API Call via CloudTrail"
+  ],
+  "detail": {
+    "eventSource": [
+      "cloudfront.amazonaws.com"
+    ],
+    "eventName": [
+      "UpdateDistribution"
+    ],
+    "responseElements": {
+      "distribution":{
+        "distributionConfig": {
+          "logging": {
+              "enabled": [
+                false
+              ]
+          },
+        }
+      }
+    }
+  }
+}
 PATTERN
 
   function_name   = "CloudfrontLoggingDisabled"
@@ -13,11 +39,7 @@ PATTERN
   lambda_runtime  = "python3.7"
   environment_variable_map = {
     SNS_TOPIC = var.sns_topic_arn,
-    
   }
-  custom_lambda_policy = <<EOF
-# TODO: Provide required lambda permissions policy
-EOF
 
 
 

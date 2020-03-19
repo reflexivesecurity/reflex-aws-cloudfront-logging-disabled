@@ -1,5 +1,6 @@
 # reflex-aws-cloudfront-logging-disabled
-TODO: Write a brief description of your rule and what it does.
+
+A reflex rule to detect when CloudFront logging is disabled.
 
 ## Usage
 To use this rule either add it to your `reflex.yaml` configuration file:  

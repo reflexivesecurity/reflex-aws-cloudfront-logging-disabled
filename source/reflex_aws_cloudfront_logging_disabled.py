@@ -15,7 +15,7 @@ class CloudfrontLoggingDisabled(AWSRule):
 
     def extract_event_data(self, event):
         """ Extract required event data """
-        self.distribution_id = event["detail"]["responseElements"]["id"]
+        self.distribution_id = event["detail"]["responseElements"]["distribution"]["id"]
         self.logging_enabled = event["detail"]["responseElements"]["distribution"]["distributionConfig"]["logging"]["enabled"]
 
     def resource_compliant(self):

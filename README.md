@@ -11,8 +11,8 @@ To use this rule either add it to your `reflex.yaml` configuration file:
 ```
 rules:
   aws:
-  - cloudfront-logging-disabled:
-      version: latest
+    - cloudfront-logging-disabled:
+        version: latest
 ```
 
 or add it directly to your Terraform:  

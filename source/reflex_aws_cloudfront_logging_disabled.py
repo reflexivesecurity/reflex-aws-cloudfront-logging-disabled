@@ -1,14 +1,12 @@
 """ Module for CloudfrontLoggingDisabled """
 
 import json
-import os
 
-import boto3
 from reflex_core import AWSRule
 
 
 class CloudfrontLoggingDisabled(AWSRule):
-    """ TODO: A description for your rule """
+    """ Check if CloudFront logging is disabled """
 
     def __init__(self, event):
         super().__init__(event)

@@ -1,5 +1,5 @@
 module "reflex_aws_cloudfront_logging_disabled" {
-  source           = "git::https://github.com/cloudmitigator/reflex-engine.git//modules/cwe_lambda?ref=v0.5.7"
+  source           = "git::https://github.com/cloudmitigator/reflex-engine.git//modules/cwe_lambda?ref=v0.6.0"
   rule_name        = "CloudfrontLoggingDisabled"
   rule_description = "A reflex rule to detect when CloudFront logging is disabled."
 

@@ -1,0 +1,255 @@
+{
+    "version": "0",
+    "id": "e14b9ad3-976a-9e6f-7697-c9f825ff825c",
+    "detail-type": "AWS API Call via CloudTrail",
+    "source": "aws.cloudfront",
+    "account": "150696755083",
+    "time": "2020-03-19T02:45:40Z",
+    "region": "us-east-1",
+    "resources": [],
+    "detail": {
+        "eventVersion": "1.05",
+        "userIdentity": {
+            "type": "IAMUser",
+            "principalId": "AIDASGFRZ76FWMCVCNYAK",
+            "arn": "arn:aws:iam::150696755083:user/chris.coleman.pangolock",
+            "accountId": "150696755083",
+            "accessKeyId": "ASIASGFRZ76FTH7MMZMJ",
+            "userName": "chris.coleman.pangolock",
+            "sessionContext": {
+                "sessionIssuer": {},
+                "webIdFederationData": {},
+               "attributes": {
+                    "mfaAuthenticated": "true",
+                    "creationDate": "2020-03-19T02:39:42Z"
+                }
+            },
+            "invokedBy": "signin.amazonaws.com"
+        },
+        "eventTime": "2020-03-19T02:45:40Z",
+        "eventSource": "cloudfront.amazonaws.com",
+        "eventName": "UpdateDistribution",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "107.2.141.24",
+        "userAgent": "signin.amazonaws.com",
+        "requestParameters": {
+            "id": "EXCX46P6U4BZK",
+            "distributionConfig": {
+                "callerReference": "1584585850889",
+                "viewerCertificate": {
+                    "sSLSupportMethod": "vip",
+                    "cloudFrontDefaultCertificate": true,
+                    "minimumProtocolVersion": "TLSv1"
+                },
+                "httpVersion": "http2",
+                "restrictions": {
+                    "geoRestriction": {
+                        "restrictionType": "none",
+                        "quantity": 0
+                    }
+                },
+                "defaultRootObject": "",
+                "defaultCacheBehavior": {
+                    "targetOriginId": "S3-docs.cloudmitigator.com/does/not/exist/path",
+                    "allowedMethods": {
+                        "cachedMethods": {
+                            "quantity": 2,
+                            "items": [
+                                "HEAD",
+                                "GET"
+                            ]
+                        },
+                        "items": [
+                            "HEAD",
+                            "GET"
+                        ],
+                        "quantity": 2
+                    },
+                    "minTTL": 0,
+                    "defaultTTL": 86400,
+                    "forwardedValues": {
+                        "queryStringCacheKeys": {
+                            "quantity": 0
+                        },
+                        "cookies": {
+                            "forward": "none"
+                        },
+                        "headers": {
+                            "quantity": 0
+                        },
+                        "queryString": false
+                    },
+                    "smoothStreaming": false,
+                    "fieldLevelEncryptionId": "",
+                    "viewerProtocolPolicy": "allow-all",
+                    "maxTTL": 31536000,
+                    "lambdaFunctionAssociations": {
+                        "quantity": 0
+                    },
+                    "compress": false,
+                    "trustedSigners": {
+                        "quantity": 0,
+                        "enabled": false
+                    }
+                },
+                "originGroups": {
+                    "quantity": 0
+                },
+                "enabled": true,
+                "origins": {
+                    "quantity": 1,
+                    "items": [
+                        {
+                            "id": "S3-docs.cloudmitigator.com/does/not/exist/path",
+                            "s3OriginConfig": {
+                                "originAccessIdentity": ""
+                            },
+                            "domainName": "docs.cloudmitigator.com.s3.amazonaws.com",
+                            "customHeaders": {
+                                "quantity": 0
+                            },
+                            "originPath": "/does/not/exist/path"
+                        }
+                    ]
+                },
+                "logging": {
+                    "prefix": "enable-logging",
+                    "bucket": "test-enforcement-pangolock-2.s3.amazonaws.com",
+                    "includeCookies": false,
+                    "enabled": true
+                },
+                "priceClass": "PriceClass_100",
+                "comment": "",
+                "cacheBehaviors": {
+                    "quantity": 0
+                },
+                "customErrorResponses": {
+                    "quantity": 0
+                },
+                "isIPV6Enabled": true,
+                "webACLId": "",
+                "aliases": {
+                    "quantity": 0
+                }
+            },
+            "ifMatch": "E1S0E51NGAKZ3U"
+        },
+        "responseElements": {
+            "eTag": "E3700XQTAOVALN",
+            "distribution": {
+                "status": "InProgress",
+                "lastModifiedTime": "Mar 19, 2020 2:45:40 AM",
+                "activeTrustedSigners": {
+                    "quantity": 0,
+                    "enabled": false
+                },
+                "domainName": "dgc08opy858w3.cloudfront.net",
+                "id": "EXCX46P6U4BZK",
+                "distributionConfig": {
+                    "callerReference": "1584585850889",
+                    "viewerCertificate": {
+                        "certificateSource": "cloudfront",
+                        "cloudFrontDefaultCertificate": true,
+                        "minimumProtocolVersion": "TLSv1"
+                    },
+                    "httpVersion": "http2",
+                    "restrictions": {
+                        "geoRestriction": {
+                            "restrictionType": "none",
+                            "quantity": 0
+                        }
+                    },
+                    "defaultRootObject": "",
+                    "defaultCacheBehavior": {
+                        "targetOriginId": "S3-docs.cloudmitigator.com/does/not/exist/path",
+                        "allowedMethods": {
+                            "cachedMethods": {
+                                "quantity": 2,
+                                "items": [
+                                    "HEAD",
+                                    "GET"
+                                ]
+                            },
+                            "items": [
+                                "HEAD",
+                                "GET"
+                            ],
+                            "quantity": 2
+                        },
+                        "minTTL": 0,
+                        "defaultTTL": 86400,
+                        "forwardedValues": {
+                            "queryStringCacheKeys": {
+                                "quantity": 0
+                            },
+                            "cookies": {
+                                "forward": "none"
+                            },
+                            "headers": {
+                                "quantity": 0
+                            },
+                            "queryString": false
+                        },
+                        "smoothStreaming": false,
+                        "fieldLevelEncryptionId": "",
+                        "viewerProtocolPolicy": "allow-all",
+                        "maxTTL": 31536000,
+                        "lambdaFunctionAssociations": {
+                            "quantity": 0
+                        },
+                        "compress": false,
+                        "trustedSigners": {
+                            "quantity": 0,
+                            "enabled": false
+                        }
+                    },
+                    "originGroups": {
+                        "quantity": 0
+                    },
+                    "enabled": true,
+                    "origins": {
+                        "quantity": 1,
+                        "items": [
+                            {
+                                "id": "S3-docs.cloudmitigator.com/does/not/exist/path",
+                                "s3OriginConfig": {
+                                    "originAccessIdentity": ""
+                                },
+                                "domainName": "docs.cloudmitigator.com.s3.amazonaws.com",
+                                "customHeaders": {
+                                    "quantity": 0
+                                },
+                                "originPath": "/does/not/exist/path"
+                            }
+                        ]
+                    },
+                    "logging": {
+                        "prefix": "enable-logging",
+                        "bucket": "test-enforcement-pangolock-2.s3.amazonaws.com",
+                        "includeCookies": false,
+                        "enabled": true
+                    },
+                    "priceClass": "PriceClass_100",
+                    "comment": "",
+                    "cacheBehaviors": {
+                        "quantity": 0
+                    },
+                    "customErrorResponses": {
+                        "quantity": 0
+                    },
+                    "isIPV6Enabled": true,
+                    "webACLId": "",
+                    "aliases": {
+                        "quantity": 0
+                    }
+                },
+                "inProgressInvalidationBatches": 0,
+                "aRN": "arn:aws:cloudfront::150696755083:distribution/EXCX46P6U4BZK"
+            }
+        },
+        "requestID": "442fa231-20c0-49c3-aa79-0aa04e968acb",
+        "eventID": "2d884a8b-4110-4d93-8a5f-ea78bb3ee05d",
+        "eventType": "AwsApiCall",
+        "apiVersion": "2019_03_26"
+    }
+} 

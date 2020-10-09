@@ -1,5 +1,5 @@
 module "cwe" {
-  source      = "git::https://github.com/reflexivesecurity/reflex-engine.git//modules/cwe?ref=v2.1.0"
+  source      = "git::https://github.com/reflexivesecurity/reflex-engine.git//modules/cwe?ref=v2.1.1"
   name        = "CloudfrontLoggingDisabled"
   description = "A reflex rule to detect when CloudFront logging is disabled."
 
